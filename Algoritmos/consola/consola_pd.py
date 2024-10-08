@@ -11,6 +11,7 @@ costos = {
 
 
 cadena_x = 'pala'
+
 cadena_y = 'tapa'
 
 
