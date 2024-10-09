@@ -1,13 +1,13 @@
 costos = {
-    'avanzar' : 10,
-    'borrar' : 0,
-    'reemplazar': 10,
-    'insertar' :3,
-    'kill' : 2
+    'avanzar' : 1,
+    'borrar' : 1,
+    'reemplazar': 3,
+    'insertar' :2,
+    'kill' : 1
 }
 
-cadena_x = 'pala'
-cadena_y = 'tapa'
+cadena_x = 'francesa'
+cadena_y = 'ancestro'
 
 def consolaVoraz(cadena_x, cadena_y, costos):
     
