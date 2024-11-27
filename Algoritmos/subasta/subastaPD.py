@@ -1,14 +1,14 @@
 import numpy as np
 
-ofertantes = [(500, 1, 6),
-              (450, 4, 8)]
+ofertantes = [(500, 100, 600),
+              (450, 400, 800)]
 
-ofertantes2 = [(500, 4, 6),
-               (450, 1, 8),
-               (400, 1, 4),
-               (200, 1, 2)]
-A = 10
-B = 1
+ofertantes2 = [(500, 400, 600),
+               (450, 100, 800),
+               (400, 100, 400),
+               (200, 50, 200)]
+A = 1000
+B = 100
 
 
 
@@ -44,6 +44,6 @@ def subastaDinamica(A, B, ofertantes):
     
     return matriz_costo       
                 
-print(subastaDinamica(10, 1, ofertantes2))                
+print(subastaDinamica(A, B, ofertantes2))                
   
                     
