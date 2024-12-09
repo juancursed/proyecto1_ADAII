@@ -75,7 +75,7 @@ def benchmark_fuerza_bruta():
             start_time = time.perf_counter() 
             costo_minimo, operaciones = consolaFuerzaBruta(cadena_x, cadena_y, costos)
             end_time = time.perf_counter()
-            tiempo_ejecucion = (end_time - start_time) * 1e9  
+            tiempo_ejecucion = (end_time - start_time) * 1e3  
             
          
             print(f"Entrada: {cadena_x} -> {cadena_y}")
@@ -83,7 +83,7 @@ def benchmark_fuerza_bruta():
             print("Procedimiento:")
             for paso in operaciones:
                 print(f"  - {paso}")
-            print(f"Tiempo de Ejecución: {tiempo_ejecucion:.3f} ns\n")
+            print(f"Tiempo de Ejecución: {tiempo_ejecucion:.3f} m2.473s\n")
 
 
 benchmark_fuerza_bruta()
