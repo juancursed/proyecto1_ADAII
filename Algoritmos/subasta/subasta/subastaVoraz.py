@@ -1,14 +1,5 @@
 import numpy as np
 
-A = 1000
-B = 100
-
-ofertantes = [(500, 400, 600),
-              (450, 100, 800),
-              (400, 100, 400),
-              (200, 50, 200)]
-
-
 def subastaVoraz(A, B, ofertantes):
     
     sol = []
@@ -36,11 +27,3 @@ def subastaVoraz(A, B, ofertantes):
             break
     
     return (costo_total, sol)
-    
-
-print(subastaVoraz(A, B, ofertantes))
-
-
-
-
-
