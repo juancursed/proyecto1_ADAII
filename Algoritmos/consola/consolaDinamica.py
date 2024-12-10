@@ -43,9 +43,11 @@ def consolaInteligente(cadena_x, cadena_y, costos):
                     matriz[i][j] = borrar
                     operaciones[i][j] = f"borrar '{cadena_x[i-1]}'"
 
+
     pasos = []
     i, j = m_cadena_x - 1, n_cadena_y - 1
     while i > 0 or j > 0:
+        
         if i > 0 and j > 0 and operaciones[i][j].startswith("avanzar"):
             pasos.append(operaciones[i][j])
             i -= 1
@@ -62,12 +64,15 @@ def consolaInteligente(cadena_x, cadena_y, costos):
             j -= 1
         elif i > 0 and operaciones[i][j].startswith("kill"):
             pasos.append(operaciones[i][j])
-            i -= 1
+            i = 0
+            j = 0
         else:
             break
     pasos.reverse()
-
+  
     return matriz[-1, -1], pasos
+
+    
 
 
 def benchmark_dinamica():
